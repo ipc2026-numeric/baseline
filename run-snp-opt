@@ -4,4 +4,4 @@ DOMAIN=$1
 PROBLEM=$2
 PLAN=$3
 
-java -jar ./src/enhsp/enhsp.jar -o $DOMAIN -f $PROBLEM -sp $PLAN -planner opt-hrmax
+./enhsp.sif -o $DOMAIN -f $PROBLEM -sp $PLAN -planner opt-hrmax

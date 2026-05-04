@@ -1,0 +1,18 @@
+Bootstrap: docker
+From: ubuntu:24.04
+
+%files
+    src/enhsp /opt/enhsp
+
+%post
+    apt-get update
+    apt-get install -y openjdk-21-jdk
+    cd /opt/enhsp
+    ./compile
+
+%environment
+    export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+    export PATH=$JAVA_HOME/bin:$PATH
+
+%runscript
+    exec java -jar /opt/enhsp/enhsp.jar "$@"
