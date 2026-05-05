@@ -13,8 +13,8 @@ It contains the following:
 
 Assuming that you have the source files for enhsp located in `/src/enhsp`, run the following command:
 
-```sudo apptainer build enhsp.sif Recipe```
+```sudo apptainer build planner.sif Recipe```
 
-This will create qn executable file, ```enhsp.sif```, which will be the main entry point for the ```run``` scripts (included in this repositiory).
+This will create qn executable file, ```planner.sif```, which will be the main entry point for the ```run``` scripts (included in this repositiory).
 
-Note that the recipe also specifies how the planner should be executed (see the ```%runscript``` section).
+Note that the recipe also specifies how the planner should be executed (see the ```%runscript``` section)

@@ -4,4 +4,4 @@ DOMAIN=$1
 PROBLEM=$2
 PLAN=$3
 
-./enhsp.sif -o $DOMAIN -f $PROBLEM -sp $PLAN -planner opt-hrmax
+./planner.sif -o $DOMAIN -f $PROBLEM -sp $PLAN -planner opt-hrmax
